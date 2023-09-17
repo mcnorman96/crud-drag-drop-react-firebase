@@ -15,7 +15,7 @@ const AddProject = () => {
   const addProject = () => {
     ProjectServices.create({
       name: Name,
-      slug: Name.trim(),
+      slug: Name.replace(' ', ''),
       description: Description,
       img: Img,
       type: Type,
