@@ -59,10 +59,7 @@ const Projects = () => {
 
   return (
     <div className='max-w-screen-xl px-4 m-auto'>
-      <h1 className='mt-16 text-center'>Projects</h1>
-      <button disabled={!updatedOrder} onClick={() => handleUpdateOrder()} className="mt-5 btn-primary">
-        Update order
-      </button>
+      <h1 className='my-16 text-center'>Projects</h1>
       <div className="grid justify-between max-w-screen-xl grid-cols-1 gap-4 mx-auto mt-5 max-xl sm:grid-cols-2 md:grid-cols-3">
         {projects && projects.map((project, index) => (
           <div
@@ -77,6 +74,9 @@ const Projects = () => {
           </div>
         ))}
       </div>
+      <button disabled={!updatedOrder} onClick={() => handleUpdateOrder()} className="mt-16 btn-primary">
+        Update order
+      </button>
     </div>
   )
 }
